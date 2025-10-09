@@ -1,0 +1,260 @@
+/* Base y reset */
+html {
+    font-size: calc(1em + 0.5vw);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navegación */
+.navbar {
+    background-color: #cd2a1b;
+    padding: 1rem 0;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgb(0,0,0,0.2);
+}
+
+.navbar .container-fluid{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-brand{/*el logo de la empresa level up*/
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-brand:hover{/*efecto cuando esta el raton por encima*/
+    color:#79b0eb;
+}
+
+.navbar-nav{/*lista de navegacion*/
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-item{
+    margin: 0;
+}
+
+/*Slider*/
+.carousel {
+    max-width: 100%; 
+    height: 500px; /* Altura fija para el carrusel, ajusta según necesites */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.carousel-inner {
+    height: 100%; /* Asegura que el contenedor interno ocupe toda la altura */
+    border-radius: 8px;
+}
+
+.carousel-item {
+    height: 100%; /* Cada slide ocupa toda la altura */
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%; /* Las imágenes se ajustan a la altura completa */
+    width: 100%;
+    object-fit: cover; /* Mantiene la proporción sin distorsionar */
+    object-position: center; /* Centra la imagen */
+}
+
+/*Actividades*/ 
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.image-container img {
+    max-width: 30%;
+    height: 30vh;
+    border-radius: 8px;
+}
+
+/* FAQ */
+/* FAQ */
+.FAQ {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #F2EFEB;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.FAQ h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.faq-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.faq-item {
+    flex: 0 0 calc(33.333% - 40px/3); 
+    max-width: calc(33.333% - 40px/3); 
+    box-sizing: border-box; 
+}
+
+.faq-item h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center; /* Centra la pregunta horizontalmente */
+}
+
+.faq-item p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center; /* Centra la respuesta horizontalmente */
+    margin: 0; /* Elimina márgenes extras para un mejor flujo */
+}
+
+.flip-card {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #0c8006;
+    border: 2px solid #0c8006; /* Corregido: era 'border-radius: 2px solid' (error de sintaxis) */
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Cambiado: columna para que pregunta arriba y respuesta abajo */
+    justify-content: flex-start; /* Arriba: alinea al inicio (top) */
+    align-items: center; /* Centra horizontalmente todo el contenido */
+}
+/* Ajustes para responsividad */
+@media (max-width: 992px) {
+    .faq-item {
+        flex: 0 0 calc(50% - 20px/2); 
+        max-width: calc(50% - 20px/2);
+    }
+}
+
+@media (max-width: 576px) {
+    .faq-grid {
+        gap: 15px;
+    }
+    
+    .faq-item {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+
+    .FAQ {
+        padding: 30px 15px; 
+    }
+
+    .FAQ h2 {
+        font-size: 2rem;
+    }
+
+    .faq-item {
+        padding: 10px; 
+    }
+    
+    .flip-card {
+        height: 120px;
+    }
+}
+
+/* Focus visible para accesibilidad */
+h1 {
+    padding: 3rem 1em;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+/* Secciones y artículos */
+main {
+    padding: 2rem;
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
