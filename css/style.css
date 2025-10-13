@@ -3,8 +3,9 @@ html {
     font-size: calc(1em + 0.5vw);
 }
 
-body {
+html body {
     background-color:black;
+    color: white;
     margin: 0;
     padding: 0;
     line-height: 1.6;
