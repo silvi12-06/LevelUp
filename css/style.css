@@ -114,18 +114,15 @@ html body {
 }
 
 
-
 /* FAQ */
 .FAQ {
     padding: 50px 20px;
     text-align: center;
     background-color: #F2EFEB;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
 .FAQ h2 {
-    font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -145,7 +142,6 @@ html body {
 }
 
 .faq-item h3 {
-    font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -153,7 +149,6 @@ html body {
 }
 
 .faq-item p {
-    font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     font-size: 1rem;
     text-align: center; /* Centra la respuesta horizontalmente */
