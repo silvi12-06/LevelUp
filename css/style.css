@@ -101,8 +101,6 @@ html body {
     opacity: 1;
 }
 
-
-
 /*Actividades*/ 
 .image-container {
     display: flex;
@@ -114,6 +112,8 @@ html body {
     height: 30vh;
     border-radius: 8px;
 }
+
+
 
 /* FAQ */
 .FAQ {
