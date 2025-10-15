@@ -113,6 +113,58 @@ html body {
     border-radius: 8px;
 }
 
+/*Tarifa*/
+#tarifa {
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#tarifa header h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#tarifa h5{
+    font-weight: 500;
+    color: white;
+}
+
+#tarifa p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.tarifa .flip-card {
+    perspective: 1000px;
+    height: 650px;
+    width: 100%;
+}
+
+.tarifa .faq-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.tarifa .flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Cambiado: columna para que pregunta arriba y respuesta abajo */
+    justify-content: flex-start; /* Arriba: alinea al inicio (top) */
+    align-items: center; /* Centra horizontalmente todo el contenido */
+    background-color: #085e03;
+    border: 2px solid #085e03; /* Corregido: era 'border-radius: 2px solid' (error de sintaxis) */
+    border-radius: 10px;
+}
 
 /* FAQ */
 .FAQ {
@@ -149,20 +201,20 @@ html body {
 }
 
 .faq-item p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     text-align: center; /* Centra la respuesta horizontalmente */
     margin: 0; /* Elimina márgenes extras para un mejor flujo */
 }
 
-.flip-card {
+.faq .flip-card {
     width: 100%;
-    height: 550px;
+    height: 450px;
     position: relative;
     perspective: 1000px;
 }
 
-.flip-card-inner {
+.faq .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -171,7 +223,7 @@ html body {
     transform-style: preserve-3d;
 }
 
-.flip-card-front {
+.faq .flip-card-front {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -182,8 +234,8 @@ html body {
     flex-direction: column; /* Cambiado: columna para que pregunta arriba y respuesta abajo */
     justify-content: flex-start; /* Arriba: alinea al inicio (top) */
     align-items: center; /* Centra horizontalmente todo el contenido */
-    background-color: #0fa407;
-    border: 2px solid #0c8006; /* Corregido: era 'border-radius: 2px solid' (error de sintaxis) */
+    background-color: #085e03;
+    border: 2px solid #085e03; /* Corregido: era 'border-radius: 2px solid' (error de sintaxis) */
     border-radius: 10px;
 }
 /* Ajustes para responsividad */
