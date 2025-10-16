@@ -1,6 +1,6 @@
 /* Base y reset */
 html {
-    font-size: calc(1em + 0.5vw);
+    font-size: medium;
 }
 
 html body {
@@ -23,6 +23,7 @@ html body {
 .navbar .container-fluid{
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .navbar-brand{/*el logo de la empresa level up*/
@@ -101,13 +102,49 @@ html body {
     opacity: 1;
 }
 
+/*Acerca de*/
+#home {
+  background-color: black;
+}
+
+#home .row {
+  display: flex;
+  align-items: stretch; /* iguala la altura de todos los hijos */
+}
+
+#home .col-md-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+#home h2 {
+  font-weight: 400;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+#home p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+iframe {
+  border-radius: 10px;
+  margin-left: 110%;
+}
+
+
+
+
 /*Actividades*/ 
-.image-container {
+#about .image-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
-.image-container img {
+#about .image-container img {
     max-width: 30%;
     height: 30vh;
     border-radius: 8px;
@@ -121,26 +158,32 @@ html body {
 }
 
 #tarifa header h2 {
-    font-size: 2.5rem;
+    font-weight: 400;
+    font-size: 50px;
     color: white;
     margin-bottom: 20px;
 }
 
 #tarifa h5{
     font-weight: 500;
-    color: white;
+    color: black;
+}
+
+#tarifa h5{
+    font-weight: 600;
+    color: black;
 }
 
 #tarifa p {
     font-weight: 400;
     font-size: 1.1rem;
-    color: white;
+    color: black;
     margin-bottom: 15px;
 }
 
 .tarifa .flip-card {
     perspective: 1000px;
-    height: 650px;
+    height: 350px;
     width: 100%;
 }
 
@@ -161,8 +204,7 @@ html body {
     flex-direction: column; /* Cambiado: columna para que pregunta arriba y respuesta abajo */
     justify-content: flex-start; /* Arriba: alinea al inicio (top) */
     align-items: center; /* Centra horizontalmente todo el contenido */
-    background-color: #085e03;
-    border: 2px solid #085e03; /* Corregido: era 'border-radius: 2px solid' (error de sintaxis) */
+    background-color: #ddda0b; 
     border-radius: 10px;
 }
 
@@ -170,7 +212,6 @@ html body {
 .FAQ {
     padding: 50px 20px;
     text-align: center;
-    background-color: #F2EFEB;
     font-size: 20px;
 }
 
@@ -198,6 +239,7 @@ html body {
     font-size: 1.2rem;
     margin-bottom: 10px;
     text-align: center; /* Centra la pregunta horizontalmente */
+    color:black;
 }
 
 .faq-item p {
@@ -205,11 +247,12 @@ html body {
     font-size: 1rem;
     text-align: center; /* Centra la respuesta horizontalmente */
     margin: 0; /* Elimina márgenes extras para un mejor flujo */
+    color:#000;
 }
 
 .faq .flip-card {
     width: 100%;
-    height: 450px;
+    height: 250px;
     position: relative;
     perspective: 1000px;
 }
@@ -223,7 +266,12 @@ html body {
     transform-style: preserve-3d;
 }
 
-.faq .flip-card-front {
+.faq .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.faq .flip-card-front,
+.faq .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -231,12 +279,16 @@ html body {
     color: white;
     padding: 15px;
     display: flex;
-    flex-direction: column; /* Cambiado: columna para que pregunta arriba y respuesta abajo */
-    justify-content: flex-start; /* Arriba: alinea al inicio (top) */
-    align-items: center; /* Centra horizontalmente todo el contenido */
-    background-color: #085e03;
-    border: 2px solid #085e03; /* Corregido: era 'border-radius: 2px solid' (error de sintaxis) */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#ddda0b;
     border-radius: 10px;
+}
+
+.faq .flip-card-back {
+    background-color: #ddda0b;
+    transform: rotateY(180deg);
 }
 /* Ajustes para responsividad */
 @media (max-width: 992px) {
@@ -308,7 +360,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    background-color: #777676;
+    background-color: #837b7b;
     border-radius: 10px;
     padding: 50px 20px;
 }
@@ -339,8 +391,8 @@ button:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #6d6d6d;
-    color: #fff;
+    background-color: #ddda0b;
+    color: #000;
 }
 
 footer p{
