@@ -110,11 +110,20 @@ html body {
 #home .row {
   display: flex;
   align-items: stretch; /* iguala la altura de todos los hijos */
+  min-height: 450px;
 }
 
 #home .col-md-6 {
   display: flex;
   flex-direction: column;
+  padding: 0 15px;
+}
+
+.content-wrapper, .map-wrapped{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #home h2 {
@@ -130,24 +139,82 @@ html body {
   text-align: left;
 }
 
-iframe {
+.map-wrapped img {
   border-radius: 10px;
-  margin-left: 110%;
+  object-fit: cover;
 }
 
 
 
 
 /*Actividades*/ 
-#about .image-container {
+.hero-container {
+    position: relative;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    padding: 50px 20px;
 }
-#about .image-container img {
-    max-width: 30%;
-    height: 30vh;
+
+.hero-image {
+    width: 600px;
+    height:300px;
+    border-radius: 0.375rem; /* rounded */
+    max-width: 100%;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* z-3 */
+}
+
+.hero-logo {
+    width: 130px;
+    border-radius: 0.5rem; /* rounded */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; /* shadow-lg */
+    
+}
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    max-height: 90%;
+    padding: 20px;
     border-radius: 8px;
+    animation: zoom 0.3s;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #fff;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
 }
 
 /*Tarifa*/
@@ -183,7 +250,7 @@ iframe {
 
 .tarifa .flip-card {
     perspective: 1000px;
-    height: 350px;
+    height: 450px;
     width: 100%;
 }
 
@@ -206,6 +273,21 @@ iframe {
     align-items: center; /* Centra horizontalmente todo el contenido */
     background-color: #ddda0b; 
     border-radius: 10px;
+}
+
+.tarifa .btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.tarifa .btn:hover {
+    background-color: #0056b3;
 }
 
 /* FAQ */
