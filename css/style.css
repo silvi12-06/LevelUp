@@ -133,6 +133,12 @@ html body {
   text-align: center;
 }
 
+#home h4{
+    font-weight: 300;
+    color: white;
+    margin-bottom: 20px;
+}
+
 #home p {
   font-size: 16px;
   line-height: 1.6;
@@ -144,14 +150,29 @@ html body {
   object-fit: cover;
 }
 
-
-
-
 /*Actividades*/ 
+#about{
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#about h2{
+    font-weight: 400;
+    font-size: 50px;
+    color:white;
+    margin-bottom: 10px;
+}
+
+#about h4{
+    font-weight: 300;
+    color: white;
+    margin-bottom: 20px;
+}
+
 .hero-container {
     position: relative;
-    display: flex;
-    padding: 50px 20px;
+    padding: 20px;
 }
 
 .hero-image {
@@ -171,8 +192,7 @@ html body {
 
 .hero-logo {
     width: 130px;
-    border-radius: 0.5rem; /* rounded */
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; /* shadow-lg */
+    background: transparent;
     
 }
 /* Modal */
@@ -228,17 +248,19 @@ html body {
     font-weight: 400;
     font-size: 50px;
     color: white;
+    margin-bottom: 10px;
+}
+
+#tarifa h4{
+    font-weight: 300;
+    color: white;
     margin-bottom: 20px;
 }
 
 #tarifa h5{
     font-weight: 500;
     color: black;
-}
-
-#tarifa h5{
-    font-weight: 600;
-    color: black;
+    margin-bottom: 10p;
 }
 
 #tarifa p {
@@ -297,10 +319,19 @@ html body {
     font-size: 20px;
 }
 
-.FAQ h2 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+#preguntas h2 {
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#preguntas h4{
+    font-weight: 300;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .faq-grid {
@@ -337,6 +368,7 @@ html body {
     height: 250px;
     position: relative;
     perspective: 1000px;
+    margin-bottom: 10px;
 }
 
 .faq .flip-card-inner {
@@ -407,22 +439,6 @@ html body {
     }
 }
 
-/* Focus visible para accesibilidad */
-h1 {
-    padding: 3rem 1em;
-    display: flex;
-    justify-content: center;
-}
-
-h2{
-    display: flex;
-    justify-content: center;
-}
-
-p{
-    display: flex;
-    justify-content: center;
-}
 
 /* Secciones y artículos */
 main {
@@ -437,7 +453,89 @@ article {
     background-color: #fafafa;
 }
 
+/*Imagenes*/
+#img {
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 20px; 
+}
+
+#img h2{
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#img h4{
+    font-weight: 300;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.img .carousel-inner, .carousel-item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.img .carousel-item img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.img .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.img .carousel-indicators button {
+    background-color: #fff;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.img .carousel-indicators .active {
+    opacity: 1;
+}
+
+
 /* Formulario */
+#contact h2{
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#contact h4{
+    font-weight: 300;
+    color: white;
+    margin-bottom: 20px;
+}
+
 form {
     display: flex;
     flex-direction: column;
