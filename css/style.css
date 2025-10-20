@@ -50,7 +50,7 @@ html body {
     color: #fff; 
 }
 
-/*Slider*/
+/*Slider
 .carousel {
     position: relative;
     width: 100%;
@@ -100,8 +100,9 @@ html body {
 
 .carousel-indicators .active {
     opacity: 1;
-}
+}*/
 
+/*imagen*/
 /*Acerca de*/
 #home {
   background-color: black;
@@ -137,6 +138,7 @@ html body {
   font-size: 18px;
   line-height: 1.6;
   text-align: left;
+  line-height: 2;
 }
 
 .map-wrapped img {
@@ -425,6 +427,7 @@ article {
     color: white;
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: center;
 }
 
 #img .text-blanco p{
