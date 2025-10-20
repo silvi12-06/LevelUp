@@ -404,40 +404,6 @@ html body {
     background-color: #ddda0b;
     transform: rotateY(180deg);
 }
-/* Ajustes para responsividad */
-@media (max-width: 992px) {
-    .faq-item {
-        flex: 0 0 calc(50% - 20px/2); 
-        max-width: calc(50% - 20px/2);
-    }
-}
-
-@media (max-width: 576px) {
-    .faq-grid {
-        gap: 15px;
-    }
-    
-    .faq-item {
-        flex: 0 0 100%; 
-        max-width: 100%;
-    }
-
-    .FAQ {
-        padding: 30px 15px; 
-    }
-
-    .FAQ h2 {
-        font-size: 2rem;
-    }
-
-    .faq-item {
-        padding: 10px; 
-    }
-    
-    .flip-card {
-        height: 120px;
-    }
-}
 
 
 /* Secciones y artículos */
