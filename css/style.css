@@ -134,7 +134,7 @@ html body {
 }
 
 #home p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   text-align: left;
 }
@@ -156,6 +156,12 @@ html body {
     font-size: 50px;
     color:white;
     margin-bottom: 10px;
+}
+
+#about p{
+    font-weight: 20px;
+    text-align: center;
+    color: white;
 }
 
 .hero-container {
@@ -243,6 +249,13 @@ html body {
     font-weight: 500;
     color: black;
     margin-bottom: 10p;
+}
+
+#tarifa p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 15px;
 }
 
 #tarifa p {
