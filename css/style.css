@@ -254,15 +254,14 @@ html body {
 #tarifa p {
     font-weight: 400;
     font-size: 1.1rem;
-    color: white;
+    color: black;
     margin-bottom: 15px;
 }
 
-#tarifa p {
-    font-weight: 400;
-    font-size: 1.1rem;
-    color: black;
-    margin-bottom: 15px;
+#tarifa .text-blanco p{
+    color:white;
+    text-align: center;
+    font-weight: 20px;
 }
 
 .tarifa .flip-card {
@@ -320,6 +319,12 @@ html body {
     color: white;
     margin-bottom: 20px;
     text-align: center;
+}
+
+#preguntas .text-blanco p{
+    color: white;
+    text-align: center;
+    font-weight: 20px;
 }
 
 .faq-grid {
@@ -420,6 +425,12 @@ article {
     color: white;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+#img .text-blanco p{
+    color: white;
+    font-weight: 20px;
+    text-align: center;
 }
 
 .carousel {
