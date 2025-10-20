@@ -133,12 +133,6 @@ html body {
   text-align: center;
 }
 
-#home h4{
-    font-weight: 300;
-    color: white;
-    margin-bottom: 20px;
-}
-
 #home p {
   font-size: 16px;
   line-height: 1.6;
@@ -162,12 +156,6 @@ html body {
     font-size: 50px;
     color:white;
     margin-bottom: 10px;
-}
-
-#about h4{
-    font-weight: 300;
-    color: white;
-    margin-bottom: 20px;
 }
 
 .hero-container {
@@ -251,12 +239,6 @@ html body {
     margin-bottom: 10px;
 }
 
-#tarifa h4{
-    font-weight: 300;
-    color: white;
-    margin-bottom: 20px;
-}
-
 #tarifa h5{
     font-weight: 500;
     color: black;
@@ -322,13 +304,6 @@ html body {
 #preguntas h2 {
     font-weight: 400;
     font-size: 50px;
-    color: white;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#preguntas h4{
-    font-weight: 300;
     color: white;
     margin-bottom: 20px;
     text-align: center;
@@ -434,12 +409,6 @@ article {
     margin-top: 20px;
 }
 
-#img h4{
-    font-weight: 300;
-    color: white;
-    margin-bottom: 20px;
-}
-
 .carousel {
     border-radius: 15px;
     overflow: hidden;
@@ -492,12 +461,6 @@ article {
 #contact h2{
     font-weight: 400;
     font-size: 50px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-#contact h4{
-    font-weight: 300;
     color: white;
     margin-bottom: 20px;
 }
