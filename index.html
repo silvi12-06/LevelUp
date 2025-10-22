@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/stylesBootstrap.css">
+
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                             <a class="nav-link" href="#about" title="Conoce nuestras actividades">Actividades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#tarifa" title="Encuentra información sobre tarifas">Tarifas</a>
+                            <a class="nav-link" href="#cuota" title="Encuentra información sobre tarifas">Tarifas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#preguntas" title="Preguntas frecuentes">FAQ</a>
@@ -54,7 +55,7 @@
     <section class="hero">
         <div class="container text-overlay text-center py-5">
             <img src="./img/logo sin fondo.png" alt="LEVEL UP" class="hero-logo-img">
-            <p class="hero-subtitle">TU GIMNASIO</p>
+            <p class="hero-subtitle">FITNESS EVERYDAY</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary btn-lg hero-btn me-3">
                     ¡Únete Ahora!
@@ -71,15 +72,15 @@
         <!-- Sección "Acerca de" -->
         <section id="home" class="container text-white py-5">
             <div class="text-center mb-5">
-                <h2>ACERCA DE</h2>
+                <h2 class="bebas-neue-regular">ACERCA DE</h2>
             </div>
             <div class="row align-items-stretch">
                 <div class="col-md-6">
                     <div class="content-wrapper">
                         <p> En LEVEL UP creemos que cada entrenamiento es una oportunidad para superar tus propios límites. Nuestro gimnasio está diseñado para que encuentres la motivación, el apoyo y las herramientas necesarias para alcanzar tus objetivos, ya sea ponerte en forma, ganar fuerza, mejorar tu resistencia o simplemente disfrutar de un estilo de vida más saludable.
-                            Ubicados en el centro de Lleida, ponemos a tu disposición instalaciones modernas, un ambiente cercano y un equipo de profesionales siempre dispuestos a guiarte en cada paso de tu camino. Aquí no importa de dónde partas, lo importante es hacia dónde quieres llegar.
-                            Súmate a LEVEL UP y eleva tu nivel. Tu mejor versión comienza hoy!
                         </p>
+                        <p>Ubicados en el centro de Lleida, ponemos a tu disposición instalaciones modernas, un ambiente cercano y un equipo de profesionales siempre dispuestos a guiarte en cada paso de tu camino. </p>
+                        <p>Aquí no importa de dónde partas, lo importante es hacia dónde quieres llegar. Súmate a LEVEL UP y eleva tu nivel. Tu mejor versión comienza hoy!</p>
                         <div class="text-amarillo">
                             <p>TU MEJOR VERSIÓN EMPIEZA HOY!</p>
                         </div>
@@ -94,76 +95,63 @@
         </section>
 
         <!-- Sección Actividades -->
-        <section id="about">
-            <header>
-                <h2>ACTIVIDADES</h2>
-                <p>Descubre las diversas actividades que ofrecemos para todas las edades y niveles de habilidad.</p>
-            </header>
-            <div class="container text-center">
-                <div class="row align-items-center g-4">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="hero-container">
-                            <div class="logo-container">
-                                <img src="./img/informe.png" class="hero-logo" alt="Logo" onclick="openModal('./img/pesas.jpg')">
-                                <div class="hero-buttons">
-                                    <a onclick="openModal('./img/pesas.jpg')" class="btn btn-primary btn-lg hero-btn me-3">
-                                        Entraniemto físico
-                                    </a>
-                                </div>
+        <section id="about"> 
+            <h2 class="bebas-neue-regular">ACTIVIDADES</h2> 
+            <p>Descubre las diversas actividades que ofrecemos para todas las edades y niveles de habilidad.</p> 
+            <div class="container text-center"> 
+                <div class="row align-items-center g-4"> 
+                    <div class="col-lg-6 col-md-6 col-sm-12"> 
+                        <div class="hero-container"> 
+                            <div class="logo-container"> 
+                                <img src="./img/informe.png" class="hero-logo" alt="Logo" onclick="openModal('./img/pesas.jpg')"> 
+                                <div class="hero-buttons"> 
+                                    <a onclick="openModal('./img/pesas.jpg')" class="btn btn-primary btn-lg hero-btn me-3"> 
+                                        Entrenamiento físico </a> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-lg-6 col-md-6 col-sm-12"> 
+                            <div class="hero-container"> 
+                                <div class="logo-container"> 
+                                    <img src="./img/grupo.png" class="hero-logo" alt="Logo" onclick="openModal('./img/actividades-dirigidas-bis.jpg')"> 
+                                    <div class="hero-buttons"> <a href="#contact" class="btn btn-primary btn-lg hero-btn me-3"> Clases grupales </a> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-lg-4 col-md-4 col-sm-12"> 
+                            <div class="hero-container"> 
+                                <div class="logo-container"> 
+                                    <img src="./img/guantes-de-boxeo.png" class="hero-logo" alt="Logo" onclick="openModal('./img/mujer-entrenando-defensa-personal.webp')"> 
+                                    <div class="hero-buttons"> 
+                                        <a href="#contact" class="btn btn-primary btn-lg hero-btn me-3"> Artes marciales / Defensa personal </a>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-lg-4 col-md-4 col-sm-12"> 
+                            <div class="hero-container"> 
+                                <div class="logo-container"> 
+                                    <img src="./img/yoga.png" class="hero-logo" alt="Logo" onclick="openModal('./img/yoga.jpg')"> 
+                                    <div class="hero-buttons"> 
+                                        <a href="#contact" class="btn btn-primary btn-lg hero-btn me-3"> Bienestar </a> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-lg-4 col-md-4 col-sm-12"> 
+                            <div class="hero-container"> 
+                                <div class="logo-container"> 
+                                    <img src="./img/boton-circular-plus.png" class="hero-logo" alt="Logo" onclick="openModal('./img/pesas.jpg')"> 
+                                    <div class="hero-buttons"> 
+                                        <a href="#contact" class="btn btn-primary btn-lg hero-btn me-3"> Servicios complementarios </a> 
+                                    </div> 
+                                </div> 
                             </div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="hero-container">
-                            <div class="logo-container">
-                                <img src="./img/grupo.png" class="hero-logo" alt="Logo" onclick="openModal('./img/actividades-dirigidas-bis.jpg')">
-                                <div class="hero-buttons">
-                                    <a href="#contact" class="btn btn-primary btn-lg hero-btn me-3">
-                                        Clases grupales
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="hero-container">
-                            <div class="logo-container">
-                                <img src="./img/guantes-de-boxeo.png" class="hero-logo" alt="Logo" onclick="openModal('./img/mujer-entrenando-defensa-personal.webp')">
-                                <div class="hero-buttons">
-                                    <a href="#contact" class="btn btn-primary btn-lg hero-btn me-3">
-                                        Artes marciales / Defensa personal
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="hero-container">
-                            <div class="logo-container">
-                                <img src="./img/yoga.png" class="hero-logo" alt="Logo" onclick="openModal('./img/yoga.jpg')">
-                                <div class="hero-buttons">
-                                    <a href="#contact" class="btn btn-primary btn-lg hero-btn me-3">
-                                        Bienestar
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="hero-container">
-                            <div class="logo-container">
-                                <img src="./img/boton-circular-plus.png" class="hero-logo" alt="Logo" onclick="openModal('./img/pesas.jpg')">
-                                <div class="hero-buttons">
-                                    <a href="#contact" class="btn btn-primary btn-lg hero-btn me-3">
-                                        Servicios complementarios
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                         </div> 
+                        </div> 
+                    </div> 
 
             <!--JavaScript para abrir los apartados de las actividades-->
             <div id="imageModal" class="modal">
@@ -173,13 +161,11 @@
         </section>
 
         <!-- Sección Tarifas -->
-        <section id="tarifa" class="tarifa backgound-squares">
-            <header>
-                <h2>TARIFAS</h2>
-                <div class="text-blanco">
-                    <p>Consulta nuestras tarifas competitivas y planes de membresía flexibles.</p>
-                </div>
-            </header>
+        <section id="cuota" class="tarifa backgound-squares">
+            <h2 class="bebas-neue-regular">TARIFAS</h2>
+            <div class="text-blanco">
+                <p>Consulta nuestras tarifas competitivas y planes de membresía flexibles.</p>
+            </div>
             <div class="container">
                 <div class="row sponsor-grid justify-content-center">
                     <div class="col-12 col-sm-6 col-md-3 mb-4">
@@ -245,12 +231,10 @@
 
         <!-- Sección Preguntas Frecuentes -->
         <section id="preguntas" class="faq backgound-squares">
-            <header>
-                <h2>FAQ</h2>
-                <div class="text-blanco">
-                    <p>Encuentra respuestas a las preguntas más comunes sobre nuestros servicios.</p>
-                </div>
-            </header>
+            <h2 class="bebas-neue-regular">FAQ</h2>
+            <div class="text-blanco">
+                <p>Encuentra respuestas a las preguntas más comunes sobre nuestros servicios.</p>
+            </div>
             <div class="container"> 
                 <div class="container text-center">
                     <div class="row faq-grid">
@@ -369,12 +353,10 @@
 
         <!-- Sección Imágenes -->
         <section id="img">
-            <header>
-                <h2>IMÁGENES</h2>
-                 <div class="text-blanco">
-                    <p>Explora nuestra galería de imágenes para ver nuestras instalaciones y actividades.</p>
-                </div>
-            </header>
+            <h2 class="bebas-neue-regular">IMÁGENES</h2>
+            <div class="text-blanco">
+                <p>Explora nuestra galería de imágenes para ver nuestras instalaciones y actividades.</p>
+            </div>
                 
             <div class="container">
                 <div id="carouselExample" class="carousel slide">
@@ -414,10 +396,8 @@
 
         <!-- Sección de inscripción-->
         <section id="contact">
-            <header>
-                <h2>INSCRIPCIÓN</h2>
-                <p>Inscribete a nuestro gimansio rellenando el siguiente formulario:</p>
-            </header>
+            <h2 class="bebas-neue-regular">INSCRIPCIÓN</h2>
+            <p>Inscribete a nuestro gimansio rellenando el siguiente formulario:</p>
 
             <!-- Formulario accesible -->
             <form action="#" method="post" aria-label="Formulario de inscripción">
@@ -476,6 +456,7 @@
 
     <!-- Pie de página -->
     <footer aria-label="Pie de la página">
+        <p>HORARIO:</p>
         <p>Terminos y Condiciones</p>
         <p>Política de Privacidad</p>
         <p>Políticas de cookies</p>
