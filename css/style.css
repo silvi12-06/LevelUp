@@ -195,13 +195,19 @@ html body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3; /* z-3 */
+    z-index: 3; 
 }
 
 #about .hero-logo {
     width: 130px;
     background: transparent;
-    
+    margin-bottom: -40px; 
+}
+
+#about .btn{
+    background-color: #f5d359;
+    border: none;
+    color:black;
 }
 /* Modal */
 .modal {
