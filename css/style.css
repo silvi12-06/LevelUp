@@ -95,8 +95,9 @@ html body {
 .text-overlay .btn {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #ddda0b;
+    background-color: #f5d359;
     color: black;
+    font-weight: bold;
     border: none;
     border-radius: 10px;
     text-decoration: none;
@@ -150,7 +151,7 @@ html body {
 
 #home .text-amarillo p{
     text-align: right;
-    color:#ddda0b;
+    color:#f5d359;
     font-weight: bold;
     margin-top: -20px;
 }
@@ -301,13 +302,14 @@ html body {
     padding: 15px;
     display: flex;
     flex-direction: column; /* Cambiado: columna para que pregunta arriba y respuesta abajo */
-    justify-content: flex-start; /* Arriba: alinea al inicio (top) */
+    justify-content: space-between; /* Arriba: alinea al inicio (top) */
     align-items: center; /* Centra horizontalmente todo el contenido */
-    background-color: #ddda0b; 
+    background-color: #f5d359; 
     border-radius: 10px;
 }
 
 .tarifa .btn {
+    margin-top: auto;
     background-color: white;
     color: black;
     border: none;
@@ -405,12 +407,12 @@ html body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#ddda0b;
+    background-color:#f5d359;
     border-radius: 10px;
 }
 
 .faq .flip-card-back {
-    background-color: #ddda0b;
+    background-color: #f5d359;
     transform: rotateY(180deg);
 }
 
@@ -556,7 +558,7 @@ textarea {
 }
 
 button {
-  background-color: #ddda0b;
+  background-color: #f5d359;
   color: #000;
   font-weight: bold;
   padding: 10px 20px;
@@ -577,7 +579,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #ddda0b;
+    background-color: #f5d359;
     color: #000;
 }
 
