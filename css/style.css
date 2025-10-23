@@ -25,6 +25,10 @@ html body {
     display: flex;
 }
 
+.logo{
+    height: 30px;
+}
+
 header{
     position:sticky;
     top:0;
@@ -87,6 +91,8 @@ header{
     padding: 20px 40px;
     border-radius: 10px;
     color: white;
+    font-size: 30px;
+    
 }
 
 .text-overlay p {
@@ -99,6 +105,7 @@ header{
 
 .hero-buttons{
     margin-top: 70px;
+    font-size: 20px;
 }
 
 .text-overlay .btn {
@@ -152,25 +159,26 @@ header{
 #home p {
   font-size: 18px;
   line-height: 1.6;
-  text-align: left;
+  text-align:justify;
   line-height: 2;
 }
 
 #home .text-amarillo p{
     text-align: right;
     color:#f5d359;
-    font-weight: bold;
+    font-weight:normal;
     margin-top: -20px;
+    font-size: 30px;
 }
 
 .map-wrapped img {
   border-radius: 20px;
   object-fit: cover;
 }
-/*Actividades*/ 
+
 /*Actividades*/ 
 #about{ 
-    padding: 50px 20px; 
+    padding: 10px 20px; 
     text-align: center; 
     font-size: 20px; 
 } 
@@ -178,8 +186,8 @@ header{
     font-weight: 400; 
     font-size: 50px; 
     color:white;
-     margin-bottom: 10px; 
-    } 
+    margin-bottom: 10px; 
+} 
 #about p{ 
     font-weight: 20px; 
     text-align: center; 
@@ -233,12 +241,12 @@ header{
     animation: zoom 0.3s; 
 } 
 .close { 
+    font-weight: bold;
     position: absolute; 
     top: 15px; 
     right: 35px; 
     color: #f1f1f1; 
-    font-size: 40px; 
-    font-weight: bold; 
+    font-size: 40px;  
     cursor: pointer; 
 } 
 .close:hover { 
@@ -249,6 +257,13 @@ header{
     to {transform: scale(1)} 
 }
 /*Tarifa*/
+.tarifa{
+    padding:10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #6e603b 0%, #2c2c2b 100%);
+    border-radius: 20px;
+}
 #cuota {
     padding: 50px 20px;
     text-align: center;
@@ -258,19 +273,27 @@ header{
 #cuota h2 {
     color: white;
     margin-bottom: 10px;
+    font-size: 50px;
 }
 
 #cuota h5{
-    font-weight: 500;
-    color: black;
-    margin-bottom: 10p;
+    font-weight:bold;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    
 }
 
 #cuota p {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+
+}
+
+#cuota .text-blanco{
+    font-size: 20px;
     font-weight: 400;
-    font-size: 1.1rem;
-    color: black;
-    margin-bottom: 15px;
 }
 
 #cuota .text-blanco p{
@@ -302,7 +325,7 @@ header{
     flex-direction: column; /* Cambiado: columna para que pregunta arriba y respuesta abajo */
     justify-content: space-between; /* Arriba: alinea al inicio (top) */
     align-items: center; /* Centra horizontalmente todo el contenido */
-    background-color: #f5d359; 
+    background-color: #000000; 
     border-radius: 10px;
 }
 
@@ -310,6 +333,7 @@ header{
     margin-top: auto;
     background-color: white;
     color: black;
+    font-weight: bold;
     border: none;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
@@ -319,7 +343,28 @@ header{
 }
 
 .tarifa .btn:hover {
-    background-color: #0056b3;
+    background-color: #f5d359;
+    color: #000;
+}
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.features li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.features li::before {
+    content: '✓';
+    color: #28a745;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }
 
 /* FAQ */
@@ -453,11 +498,13 @@ article {
 .carousel {
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
 }
 
 .img .carousel-inner, .carousel-item {
     width: 100%;
-    height: 100%;
+    height: 600px;
     margin: 0;
     padding: 0;
 }
@@ -495,7 +542,6 @@ article {
     opacity: 1;
 }
 
-
 /* Formulario */
 #contact h2{
     text-align: center;
@@ -518,7 +564,7 @@ article {
 }
 
 form {
-  background-color: #a3a3a3;
+  background-color: #2c2c2b;
   border-radius: 15px;
   padding: 25px;
   display: flex;
@@ -540,7 +586,7 @@ form {
 label {
   font-size: 14px;
   margin-bottom: 5px;
-  color: #222;
+  color: #ffffff;
 }
 
 input, textarea {
@@ -570,7 +616,6 @@ button {
 
 button:hover {
   background-color: #837b7b;
-  border-radius: 10px;
 }
 
 /* Footer */
@@ -589,4 +634,8 @@ footer p{
 footer img{
     width:30px;
     height: 30px;
+}
+
+.text-horario{
+    font-weight: bold;
 }
