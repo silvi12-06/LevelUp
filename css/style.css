@@ -220,11 +220,11 @@ header{
 } 
 
 #modalImageContainer .col-md-4 img {
-    width: 100%;              /* Ensures the image fills the column width */
-    height: 250px;            /* Fixed height for all images */
-    object-fit: cover;        /* Crops images to fit while maintaining aspect ratio */
-    border-radius: 8px;       /* Optional: keeps rounded corners */
-    margin: 0 auto;           /* Centers the image within the column */
+    width: 100%;             
+    height: 250px;            
+    object-fit: cover;        
+    border-radius: 8px;       
+    margin: 0 auto;           
 }
 
 .modal-content-grid {
