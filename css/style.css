@@ -76,31 +76,68 @@ header{
 
 /*hero*/
 .hero {
-    background: url(../img/hero.png) no-repeat center center;
+    background: url('../img/hero.png') no-repeat center center;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
+    min-height: 50vh; /* Altura mínima para el hero */
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.hero-logo-img{ /*level up*/
+    max-height: 550px;
+}
+
+.bebas-neue-regular .text-cabecera{
+    margin: 0; /* Elimina márgenes predeterminados */
+    letter-spacing: 0.05em; /* Espaciado entre letras para estilo */
+    line-height: 1.2;
+}
+
+.text-overlay .hero-btn {
+    background-color: #f5d359; /* Color de fondo: naranja vibrante */
+    border-color: #f5d359; /* Color del borde */
+    color:black; /* Color del texto */
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.text-overlay .hero-btn:hover {
+    background-color: #ffffff; /* Color más oscuro en hover */
+    border-color: white;
+    color:#000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-overlay .hero-btn-secondary {
+    background-color: #f5d359; /* Fondo transparente */
+    border-color: #f5d359; /* Borde cian */
+    color: black; /* Texto cian */
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.text-overlay .hero-btn-secondary:hover {
+    background-color: white; /* Fondo sutil en hover */
+    border-color:white; /* Borde más oscuro */
+    color: black; /* Texto más oscuro */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-buttons{
+    margin-top: -5rem;
+}
+/*.text-overlay {
     position: relative;
-    font-size: 20px;
-}
-
-.hero-logo-img{
-    margin-top: -170px;
-    width: 600px;
-    max-width: 80%;
-    height: auto;
-}
-
-.text-overlay {
-    padding: 20px 40px;
-    border-radius: 10px;
-    color: white;
-    font-size: 30px;
-    
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    text-align: center;
 }
 
 .text-overlay p {
@@ -131,7 +168,7 @@ header{
 .text-overlay .btn:hover {
     background-color: #837b7b;
     transform: scale(1.1);
-}
+}*/
 
 /*Acerca de*/
 #home {
@@ -179,9 +216,15 @@ header{
     font-size: 30px;
 }
 
-.map-wrapped img {
-  border-radius: 20px;
-  object-fit: cover;
+.map-wrapper {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 100%; /* Evita desbordamiento */
+}
+
+.map-wrapper iframe {
+    width: 100%; /* El iframe ocupa todo el ancho del contenedor */
+    height: 100%; /* El iframe ocupa toda la altura del contenedor ratio */
+    border: 0; /* Mantener el borde del iframe en 0 */
 }
 
 /*Actividades*/ 
