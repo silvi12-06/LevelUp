@@ -79,18 +79,25 @@ header{
     background: url('../img/hero.png') no-repeat center center;
     background-size: cover;
     min-height: 50vh; /* Altura mínima para el hero */
+    max-height: 600px;
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
+    align-items: flex-start; /* Centra verticalmente el contenido */
+}
+
+.container.text-overlay{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .hero-logo-img{ /*level up*/
-    max-height: 550px;
+    max-height: 500px;
 }
 
 .bebas-neue-regular .text-cabecera{
     margin: 0; /* Elimina márgenes predeterminados */
     letter-spacing: 0.05em; /* Espaciado entre letras para estilo */
     line-height: 1.2;
+    font-weight: bold;
 }
 
 .text-overlay .hero-btn {
@@ -129,9 +136,7 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.hero-buttons{
-    margin-top: -5rem;
-}
+
 /*.text-overlay {
     position: relative;
     top: 50%;
@@ -240,7 +245,7 @@ header{
     margin-bottom: 10px; 
 } 
 #about p{ 
-    font-weight: 20px; 
+    font-weight: 20; 
     text-align: center; 
     color: white; 
 } 
@@ -251,23 +256,29 @@ header{
     border-radius: 10px; 
     position: relative; 
     padding: 20px; 
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
 } 
 .logo-container { 
-    position: absolute; 
-    top: 50%; left: 50%; 
+    position: absolute;  
+    left: 50%; 
     transform: translate(-50%, -50%); 
     z-index: 3; 
+    top: 50%;
+    
 } 
 #about .hero-logo { 
     width: 130px; 
     background: transparent; 
-    margin-bottom: -40px; 
 } 
-#about .btn{ 
-    background-color: #f5d359; 
+#about .hero-btn{ 
+    background-color: #f5d359;
     border: none; 
     color:black; 
     font-size: 20px; 
+    top: 50%;
+ 
 } 
 
 #modalImageContainer .col-md-4 img {
