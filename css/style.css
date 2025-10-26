@@ -36,7 +36,11 @@ header{
 }
 
 .navbar-toggler-icon{
-    background-image: white;
+    filter: invert(100%);
+}
+
+.navbar-toggler{
+    margin-left: auto;
 }
 
 .navbar .container-fluid{
