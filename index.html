@@ -20,10 +20,10 @@
             <div class="container-fluid">
                 <a class="navbar-brand">
                     <img src="./img/logo nav.png" alt="Logo" class="logo LEVEL UP">
+                </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                </a>
                 <h1 class="text-danger">
                     <span class="visually-hidden">LEVEL UP</span>
                 </h1>
@@ -155,7 +155,7 @@
                 <div class="logo-container">
                     <img src="./img/agregar.png" class="hero-logo" alt="Complementarios" onclick="openModal(['./img/complementarios1.jpg','./img/complementarios2.jpg','./img/complementarios3.jpg','./img/complementarios4.jpg','./img/complementarios5.jpg','./img/complementarios6.jpg'], 'Complementarios')">
                     <div class="hero-buttons">
-                        <a onclick="openModal(['./img/complementarios1.jpg','./img/complementarios2.jpg','./img/complementarios3.jpg','./img/complementarios4.jpg','./img/complementarios5.jpg','./img/complementarios6.jpg'], 'Complementarios')" class="btn btn-primary btn-lg hero-btn me-3">
+                        <a onclick="openModal(['./img/complementario 1.jpg','./img/complementario 2.jpg','./img/complementario 3.jpg','./img/complementario 4.jpg','./img/complementario 5.jpg','./img/complementario 6.jpg'], 'Complementarios')" class="btn btn-primary btn-lg hero-btn me-3">
                             Complementarios
                         </a>
                     </div>
@@ -391,23 +391,23 @@
             <div class="text-blanco">
                 <p>Explora nuestra galería de imágenes para ver nuestras instalaciones y actividades.</p>
             </div>
-                
-            <div id="carouselExample" class="carousel slide">
+            <div class="container-fluid p-0">   
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/pesas carrousel.jpg" class="d-block w-100" alt="">
+                        <img src="./img/pesas carrousel.jpg" class="d-block w-100 img-fluid" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/bicis.jpg" class="d-block w-100" alt="">
+                        <img src="./img/bicis.jpg" class="d-block w-100 img-fluid" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/boxeo carrousel.jpg" class="d-block w-100" alt="">
+                        <img src="./img/boxeo carrousel.jpg" class="d-block w-100 img-fluid" alt="">
                     </div>
                      <div class="carousel-item">
-                        <img src="./img/cinta de correr.jpg" class="d-block w-100" alt="">
+                        <img src="./img/cinta de correr.jpg" class="d-block w-100 img-fluid" alt="">
                     </div>
                      <div class="carousel-item">
-                        <img src="./img/defensa personal carrousel.jpg" class="d-block w-100" alt="">
+                        <img src="./img/defensa personal carrousel.jpg" class="d-block w-100 img-fluid" alt="">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -419,6 +419,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            </div>  
         </section>
 
         <!-- Sección de inscripción-->
