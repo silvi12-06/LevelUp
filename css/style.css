@@ -84,6 +84,24 @@ header{
     align-items: flex-start; /* Centra verticalmente el contenido */
 }
 
+.frase-container {
+    background-color: white; /* Fondo negro fijo */
+    width: 100%;
+    padding: 10; /* Espaciado para la "cinta" */
+    text-align: center;
+    position: relative; /* Para que el fondo quede fijo */
+    margin-bottom: 2rem;
+}
+
+.frase {
+    font-size: 20px;
+    white-space: nowrap; /* Evita que la frase se divida en varias líneas */
+    color: black; /* Para que sea visible sobre fondo oscuro */
+    position: relative; /* Necesario para que GSAP pueda moverlo */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .container.text-overlay{
     padding-top: 0;
     padding-bottom: 0;
@@ -135,45 +153,6 @@ header{
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
-/*.text-overlay {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 1rem;
-    text-align: center;
-}
-
-.text-overlay p {
-    margin-top: -400px;
-    margin-left: -125px;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.hero-buttons{
-    margin-top: 70px;
-    font-size: 20px;
-}
-
-.text-overlay .btn {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #f5d359;
-    color: black;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: transform 0.3s;
-}
-
-.text-overlay .btn:hover {
-    background-color: #837b7b;
-    transform: scale(1.1);
-}*/
 
 /*Acerca de*/
 #home {
@@ -349,6 +328,8 @@ header{
     background: linear-gradient(135deg, #6e603b 0%, #2c2c2b 100%);
     border-radius: 20px;
 }
+
+
 #cuota {
     padding: 50px 20px;
     text-align: center;
@@ -712,7 +693,7 @@ button {
   font-size: 16px;
   align-self: center;
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 button:hover {
