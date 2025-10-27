@@ -84,31 +84,14 @@ header{
     align-items: flex-start; /* Centra verticalmente el contenido */
 }
 
-.frase-container {
-    background-color: white; /* Fondo negro fijo */
-    width: 100%;
-    padding: 10; /* Espaciado para la "cinta" */
-    text-align: center;
-    position: relative; /* Para que el fondo quede fijo */
-    margin-bottom: 2rem;
-}
-
-.frase {
-    font-size: 20px;
-    white-space: nowrap; /* Evita que la frase se divida en varias líneas */
-    color: black; /* Para que sea visible sobre fondo oscuro */
-    position: relative; /* Necesario para que GSAP pueda moverlo */
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
 .container.text-overlay{
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .hero-logo-img{ /*level up*/
-    max-height: 500px;
+    margin-top: 100px;
+    max-height: 300px;
 }
 
 .bebas-neue-regular .text-cabecera{
@@ -152,6 +135,25 @@ header{
     color: black; /* Texto más oscuro */
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*GSAP*/
+.frase-container {
+    background-color: #f5d359; /* Fondo negro fijo */
+    width: 100%;
+    padding: 10; /* Espaciado para la "cinta" */
+    text-align: center;
+    position: relative; /* Para que el fondo quede fijo */
+    margin-top: 60px;
+}
+
+.frase {
+    font-size: 20px;
+    white-space: nowrap; /* Evita que la frase se divida en varias líneas */
+    color: black; /* Para que sea visible sobre fondo oscuro */
+    position: relative; /* Necesario para que GSAP pueda moverlo */
+    text-align: center;
+    font-weight: bold;
 }
 
 /*Acerca de*/
