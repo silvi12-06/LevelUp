@@ -735,22 +735,41 @@ button:hover {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
     background-color: #f5d359;
     color: #000;
+    font-family: 'Arial', sans-serif;
 }
 
-footer p{
-    margin-bottom: 5px;
-    font-size:15px ;
+footer p, footer a {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
-footer img{
-    width:30px;
-    height: 30px;
+.text-footer {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem !important;
 }
 
-.text-horario{
-    font-weight: bold;
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0);
+    transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Enlaces legales */
+footer a {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #333;
+    text-decoration: underline;
 }

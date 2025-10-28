@@ -500,58 +500,63 @@
         </section>
     </main>
 
-    <!-- Pie de página -->
-    <footer class="bg-dark text-black py-4" aria-label="Pie de la página">
-        <div class="container">
-            <div class="row g-4 text-center text-md-start">
-                <div class="col-12 col-md-4">
-                    <div class="text-horario">
-                        <p class="fw-bold mb-1 text-black">HORARIO:</p>
-                        <p class="mb-0">De Lunes a Sábado: 6:00 a 23:00</p>
-                        <p class="mb-0">Domingos: 6:00 a 14:00</p>
+<!-- Pie de página -->
+<footer class="bg-warning text-black py-4" aria-label="Pie de la página">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- COLUMNA 1: CONTACTO -->
+            <div class="col-12 col-md-4">
+                <div class="text-center text-md-start h-100 d-flex flex-column justify-content-start">
+                    <h3 class="bebas-neue-regular fw-bold mb-3 text-footer">CONTACTO</h3>
+                    
+                    <p class="mb-2 d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                        <img src="./img/llamada-telefonica.png" alt="Teléfono" class="footer-icon">
+                        <a href="tel:913536241" class="text-black text-decoration-none">913 536 241</a>
+                    </p>
+
+                    <p class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                        <img src="./img/correo.png" alt="Email" class="footer-icon">
+                        <a href="mailto:levelup@gmail.com" class="text-black text-decoration-none">levelup@gmail.com</a>
+                    </p>
+
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="#"><img src="./img/instagram (1).png" alt="Instagram" class="footer-icon"></a>
+                        <a href="#"><img src="./img/facebook (1).png" alt="Facebook" class="footer-icon"></a>
                     </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <div class="footer-contact text-center">
-                        <p class="fw-bold mb-1 text-black">CONTACTO:</p>
-                        <p class="mb-2">
-                            <i class="bi bi-telephone-fill me-2"></i>
-                            <img src="./img/llamada-telefonica.png" alt="">
-                            <a href="" class="text-black text-decoration-none">913 536 241</a>
-                        </p>
-
-                        <p class="mb-3">
-                            <i class="bi bi-envelope-fill me-2"></i>
-                            <img src="./img/correo.png" alt="">
-                            <a href="" class="text-black text-decoration-none">levelup@gmail.com</a>
-                        </p>
-
-                        <div class="footer-icons d-flex justify-content-center gap-3">
-                            <img src="./img/instagram (1).png" alt="">
-                            <img src="./img/facebook (1).png" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <div class="legal-links text-center text-md-end">
-                        <p class="fw-bold mb-1 text-black">TEXTOS LEGALES:</p>
-                        <p class="mb-1 small">
-                            <a href="#" class="d-block text-black py-1">Términos y Condiciones</a> 
-                            <a href="#" class="d-block text-black py-1">Política de Privacidad</a>  
-                            <a href="#" class="d-block text-black py-1">Políticas de cookies</a>  
-                        </p>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <p>Made by: Carla Prat & Silvia Barañán</p>
-                    <p>&copy; 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
                 </div>
             </div>
+
+            <!-- COLUMNA 2: HORARIO -->
+            <div class="col-12 col-md-4">
+                <div class="text-center h-100 d-flex flex-column justify-content-start">
+                    <h3 class="bebas-neue-regular fw-bold mb-3 text-footer">HORARIO</h3>
+                    <p class="mb-1 fw-bold">Lunes a Sábado: 6:00 a 23:00</p>
+                    <p class="mb-0 fw-bold">Domingos: 6:00 a 14:00</p>
+                </div>
+            </div>
+
+            <!-- COLUMNA 3: TEXTOS LEGALES -->
+            <div class="col-12 col-md-4">
+                <div class="text-center text-md-end h-100 d-flex flex-column justify-content-start">
+                    <h3 class="bebas-neue-regular fw-bold mb-3 text-footer">TEXTOS LEGALES</h3>
+                    <div class="small">
+                        <a href="#" class="d-block text-black text-decoration-none py-1">Términos y Condiciones</a>
+                        <a href="#" class="d-block text-black text-decoration-none py-1">Política de Privacidad</a>
+                        <a href="#" class="d-block text-black text-decoration-none py-1">Políticas de cookies</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </footer>
+
+        <!-- Créditos y copyright (fuera de las columnas) -->
+        <div class="text-center mt-4 pt-3 border-top border-dark">
+            <p class="fw-bold mb-1">Made by: Carla Prat & Silvia Barañán</p>
+            <p class="mb-0 small">&copy; 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
 
     <!-- JS externo -->
     <script src="js/js.js"></script>
