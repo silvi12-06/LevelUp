@@ -78,7 +78,7 @@ header{
 .hero {
     background: url('../img/hero.png') no-repeat center center;
     background-size: cover;
-    min-height: 50vh; /* Altura mínima para el hero */
+    min-height: 70vh; /* Altura mínima para el hero */
     max-height: 600px;
     display: flex;
     align-items: flex-start; /* Centra verticalmente el contenido */
@@ -91,7 +91,8 @@ header{
 
 .hero-logo-img{ /*level up*/
     margin-top: 100px;
-    max-height: 300px;
+    max-height: 250px;
+    
 }
 
 .bebas-neue-regular .text-cabecera{
