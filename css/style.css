@@ -363,7 +363,6 @@ header{
     border-radius: 20px;
 }
 
-
 #cuota {
     padding: 50px 20px;
     text-align: center;
@@ -381,7 +380,6 @@ header{
     font-weight:bold;
     color: rgb(255, 255, 255);
     margin-top: 20px;
-    
 }
 
 #cuota p {
@@ -389,7 +387,6 @@ header{
     font-weight: bold;
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
-
 }
 
 #cuota .text-blanco{
@@ -487,6 +484,7 @@ header{
     color: white;
     text-align: center;
     font-weight: 400;
+    font-size: 20px;
 }
 
 .faq-grid {
@@ -670,6 +668,7 @@ article {
 
 #contact p{
     text-align: center;
+    font-size: 20px;
 }
 
 .form {
@@ -731,7 +730,7 @@ button {
 }
 
 button:hover {
-  background-color: #837b7b;
+  background-color: white;
 }
 
 /* Footer */
