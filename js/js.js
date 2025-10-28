@@ -43,6 +43,45 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
+//animacion en actividades con javascript
+// Esperamos a que cargue el DOM
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll('.hover-scale-card');
+
+    cards.forEach(card => {
+        const scaleItems = card.querySelectorAll('.scale-item');
+
+        // Mouse enter
+        card.addEventListener('mouseenter', () => {
+            scaleItems.forEach(item => {
+                item.style.transform = 'scale(1.12)';
+            });
+        });
+
+        // Mouse leave
+        card.addEventListener('mouseleave', () => {
+            scaleItems.forEach(item => {
+                item.style.transform = 'scale(1)';
+            });
+        });
+
+        // BONUS: Soporte táctil (móviles)
+        card.addEventListener('touchstart', () => {
+            scaleItems.forEach(item => {
+                item.style.transform = 'scale(1.08)';
+            });
+        }, { passive: true });
+
+        card.addEventListener('touchend', () => {
+            setTimeout(() => {
+                scaleItems.forEach(item => {
+                    item.style.transform = 'scale(1)';
+                });
+            }, 150);
+        });
+    });
+});
+
 // Animación con GSAP
 document.addEventListener("DOMContentLoaded", () => {
     const elementoFrase = document.querySelector(".frase");
@@ -66,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-//scrolltrigger mapa
+//scrolltrigger mapa, animación con GSAP
 document.addEventListener("DOMContentLoaded", function () {
     gsap.registerPlugin(ScrollTrigger);
 

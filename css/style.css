@@ -269,6 +269,27 @@ header{
  
 } 
 
+/*animacion*/
+.hover-scale-card {
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.scale-item {
+    transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto elástico */
+    transform-origin: center;
+    display: inline-block;
+}
+
+.scale-item:hover {
+    transform: scale(1.12);
+}
+
+.hover-scale-card:hover {
+    background-color: #1a1a1a !important;
+    border-color: #ffed4e !important;
+}
+
 #modalImageContainer .col-md-4 img {
     width: 100%;             
     height: 250px;            
