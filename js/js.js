@@ -66,4 +66,50 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+//scrolltrigger mapa
+document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animación del mapa
+    gsap.fromTo(".gsap-map", 
+        {
+            y: 100,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 2.2,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: "#home",
+                start: "top 80%",        // Cuando el top de #home llegue al 80% de la ventana
+                end: "bottom 60%",
+                toggleActions: "play none none reverse", // Se reproduce al entrar, se revierte al salir
+                // markers: true,       // Quitar en producción
+            }
+        }
+    );
+
+    //animar el texto también (entrada desde izquierda)
+    gsap.fromTo(".content-wrapper", 
+        {
+            x: -100,
+            opacity: 0
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 2,
+            ease: "power3.out",
+            delay: 0.3,
+            scrollTrigger: {
+                trigger: "#home",
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        }
+    );
+});
+
         
