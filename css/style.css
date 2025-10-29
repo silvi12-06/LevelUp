@@ -138,25 +138,33 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*descargate la app*/
-.frase-container {
-    background-color: #f5d359; /* Fondo negro fijo */
-    width: 100%;
-    padding: 10; /* Espaciado para la "cinta" */
-    text-align: center;
-    position: relative; /* Para que el fondo quede fijo */
-    margin-top: 60px;
+/* Cinta animada: de FUERA IZQUIERDA → FUERA DERECHA */
+.app-banner {
+    background-color: #f5d359 !important;
+    color: #000 !important;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.frase {
-    font-size: 20px;
-    white-space: nowrap; /* Evita que la frase se divida en varias líneas */
-    color: black; /* Para que sea visible sobre fondo oscuro */
-    position: relative; /* Necesario para que GSAP pueda moverlo */
-    text-align: center;
-    font-weight: bold;
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%; /* Empieza justo al final del contenedor (fuera por la derecha) */
+    animation: marquee-right-to-left 10s linear infinite;
 }
 
+@keyframes marquee-right-to-left {
+    0% {
+        transform: translateX(-200%); /* Comienza en su posición natural (después del padding-left:100%) */
+    }
+    100% {
+        transform: translateX(0%); /* Se mueve hasta desaparecer por la izquierda (2 veces su ancho) */
+    }
+}
 /*Acerca de*/
 #home {
   background-color: black;

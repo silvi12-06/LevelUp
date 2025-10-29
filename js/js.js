@@ -151,6 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         console.error("No se encontró el elemento con clase 'frase'");
     }
+
 });
 
 // ScrollTrigger: Mapa y texto
