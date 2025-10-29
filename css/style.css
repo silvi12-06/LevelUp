@@ -4,7 +4,7 @@ html {
 }
 
 html body {
-    scroll-behavior: smooth;        /* Desplazamiento suave */
+    scroll-behavior: smooth;     
     scroll-padding-top: 100px;
     background-color:black;
     color: white;
@@ -78,10 +78,10 @@ header{
 .hero {
     background: url('../img/hero.png') no-repeat center center;
     background-size: cover;
-    min-height: 70vh; /* Altura mínima para el hero */
+    min-height: 70vh; 
     max-height: 600px;
     display: flex;
-    align-items: flex-start; /* Centra verticalmente el contenido */
+    align-items: flex-start; 
 }
 
 .container.text-overlay{
@@ -96,16 +96,16 @@ header{
 }
 
 .bebas-neue-regular .text-cabecera{
-    margin: 0; /* Elimina márgenes predeterminados */
-    letter-spacing: 0.05em; /* Espaciado entre letras para estilo */
+    margin: 0; 
+    letter-spacing: 0.05em; 
     line-height: 1.2;
     font-weight: bold;
 }
 
 .text-overlay .hero-btn {
-    background-color: #f5d359; /* Color de fondo: naranja vibrante */
-    border-color: #f5d359; /* Color del borde */
-    color:black; /* Color del texto */
+    background-color: #f5d359; 
+    border-color: #f5d359; 
+    color:black; 
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -113,7 +113,7 @@ header{
 }
 
 .text-overlay .hero-btn:hover {
-    background-color: #ffffff; /* Color más oscuro en hover */
+    background-color: #ffffff; 
     border-color: white;
     color:#000;
     transform: translateY(-2px);
@@ -121,9 +121,9 @@ header{
 }
 
 .text-overlay .hero-btn-secondary {
-    background-color: #f5d359; /* Fondo transparente */
-    border-color: #f5d359; /* Borde cian */
-    color: black; /* Texto cian */
+    background-color: #f5d359;
+    border-color: #f5d359; 
+    color: black; 
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -131,14 +131,14 @@ header{
 }
 
 .text-overlay .hero-btn-secondary:hover {
-    background-color: white; /* Fondo sutil en hover */
-    border-color:white; /* Borde más oscuro */
-    color: black; /* Texto más oscuro */
+    background-color: white; 
+    border-color:white; 
+    color: black; 
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Cinta animada: de FUERA IZQUIERDA → FUERA DERECHA */
+/*Cinta animada*/
 .app-banner {
     background-color: #f5d359 !important;
     color: #000 !important;
@@ -153,23 +153,23 @@ header{
 
 .marquee-text {
     display: inline-block;
-    padding-left: 100%; /* Empieza justo al final del contenedor (fuera por la derecha) */
+    padding-left: 100%; 
     animation: marquee-right-to-left 10s linear infinite;
 }
 
 @keyframes marquee-right-to-left {
     0% {
-        transform: translateX(-200%); /* Comienza en su posición natural (después del padding-left:100%) */
+        transform: translateX(-200%); 
     }
     100% {
-        transform: translateX(0%); /* Se mueve hasta desaparecer por la izquierda (2 veces su ancho) */
+        transform: translateX(0%); 
     }
 }
-
-/* Pausa al hover */
+/* Pausar al hover */
 .app-banner:hover .marquee-text {
     animation-play-state: paused;
 }
+
 /*Acerca de*/
 #home {
   background-color: black;
@@ -177,7 +177,7 @@ header{
 
 #home .row {
   display: flex;
-  align-items: stretch; /* iguala la altura de todos los hijos */
+  align-items: stretch; 
   min-height: 450px;
 }
 
@@ -217,20 +217,20 @@ header{
 }
 
 .map-wrapper {
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    max-width: 100%; /* Evita desbordamiento */
+    width: 100%; 
+    max-width: 100%; 
 }
 
 .map-wrapper iframe {
-    width: 100%; /* El iframe ocupa todo el ancho del contenedor */
-    height: 100%; /* El iframe ocupa toda la altura del contenedor ratio */
-    border: 0; /* Mantener el borde del iframe en 0 */
+    width: 100%; 
+    height: 100%; 
+    border: 0; 
 }
 
 .gsap-map {
     opacity: 0;
-    transform: translateY(100px); /* Empieza 100px más abajo */
-    transition: none !important; /* Evita conflicto con CSS */
+    transform: translateY(100px); 
+    transition: none !important; 
 }
 
 /*Actividades*/ 
@@ -283,14 +283,14 @@ header{
  
 } 
 
-/*animacion*/
+/*Animación*/
 .hover-scale-card {
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
 
 .scale-item {
-    transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto elástico */
+    transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     transform-origin: center;
     display: inline-block;
 }
@@ -304,7 +304,7 @@ header{
     border-color: #ffed4e !important;
 }
 
-/* Modal */ 
+/* Modal de actividades */ 
 .modal { 
     display: none; 
     position: fixed; 
@@ -357,7 +357,7 @@ header{
 #imageModal .row {
   margin-bottom: 1rem;
 }
-/* Asegurar que el botón X y el título sean visibles */
+
 #imageModal .modal-header {
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 2px solid #4b4b4a !important;
@@ -378,7 +378,6 @@ header{
   opacity: 0.8;
 }
 
-/* Fondo del modal */
 #imageModal .modal-content {
   background-color: #ffffff !important;
   color: rgb(0, 0, 0);
@@ -450,9 +449,9 @@ header{
     color: white;
     padding: 15px;
     display: flex;
-    flex-direction: column; /* Cambiado: columna para que pregunta arriba y respuesta abajo */
-    justify-content: space-between; /* Arriba: alinea al inicio (top) */
-    align-items: center; /* Centra horizontalmente todo el contenido */
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
     background-color: #000000; 
     border-radius: 10px;
 }
@@ -474,6 +473,7 @@ header{
     background-color: #f5d359;
     color: #000;
 }
+
 .features {
     list-style: none;
     padding: 0;
@@ -535,15 +535,15 @@ header{
     font-weight: 500;
     font-size: 1.2rem;
     margin-bottom: 10px;
-    text-align: center; /* Centra la pregunta horizontalmente */
+    text-align: center;
     color:black;
 }
 
 .faq-item p {
     font-weight: 400;
     font-size: 1rem;
-    text-align: center; /* Centra la respuesta horizontalmente */
-    margin: 0; /* Elimina márgenes extras para un mejor flujo */
+    text-align: center; 
+    margin: 0; 
     color:#000;
 }
 
@@ -603,7 +603,7 @@ article {
     background-color: #fafafa;
 }
 
-/*Imagenes*/
+/*Imágenes*/
 #img {
     padding: 20px 0;
 }
@@ -621,20 +621,18 @@ article {
     font-size: 20px;
 }
 
-/* Estilo del carousel */
+/*Carrusel */
 .carousel {
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Asegurar que las imágenes se vean */
 .carousel-item img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
 }
 
-/* FLECHAS CENTRADAS EN EL MEDIO */
 #carrouselExample .carousel-control-prev,
 #carrouselExample .carousel-control-next {
     top: 50%;
@@ -742,7 +740,7 @@ textarea {
   cursor: pointer;
   font-size: 1.1rem;
   transition: all 0.3s ease;
-  border-radius: 10px; /* Bordes muy redondeados */
+  border-radius: 10px;
   align-self: center;
   min-width: 140px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -789,7 +787,6 @@ footer p, footer a {
     transform: scale(1.2);
 }
 
-/* Enlaces legales */
 footer a {
     color: #000;
     transition: color 0.3s ease;
