@@ -1,46 +1,70 @@
-function openModal(imageUrls, title) {
-    const modal = document.getElementById('imageModal');
-    const modalImageContainer = document.getElementById('modalImageContainer');
-    const modalTitle = document.getElementById('modalTitle');
-    
-    // Set modal title
-    modalTitle.textContent = title;
-    
-    // Clear previous images
-    modalImageContainer.innerHTML = '';
-    
-    // Add new images
-    if (Array.isArray(imageUrls)) {
-        imageUrls.forEach(url => {
-            const col = document.createElement('div');
-            col.className = 'col-md-4';
-            const img = document.createElement('img');
-            img.src = url;
-            img.className = 'img-fluid';
-            img.alt = title;
-            col.appendChild(img);
-            modalImageContainer.appendChild(col);
-        });
-    } else {
-        const col = document.createElement('div');
-        col.className = 'col-md-12';
-        const img = document.createElement('img');
-        img.src = imageUrls;
-        img.className = 'img-fluid';
-        img.alt = title;
-        col.appendChild(img);
-        modalImageContainer.appendChild(col);
+function openModal(images, title) {
+  const modalTitle = document.getElementById('modalTitle');
+  const modalImageContainer = document.getElementById('modalImageContainer');
+
+  modalTitle.textContent = title;
+  modalImageContainer.innerHTML = '';
+
+  // Tomar solo las primeras 6 imágenes
+  const selectedImages = images.slice(0, 6);
+
+  // Crear filas de 3 imágenes
+  for (let i = 0; i < selectedImages.length; i += 3) {
+    const row = document.createElement('div');
+    row.className = 'row g-3 mb-3'; // g-3 = espacio entre columnas
+
+    for (let j = i; j < i + 3 && j < selectedImages.length; j++) {
+      const col = document.createElement('div');
+      // MÓVIL: 1 imagen por fila → col-12
+      // TABLET Y ARRIBA: 3 por fila → col-md-4
+      col.className = 'col-12 col-md-4';
+
+      const img = document.createElement('img');
+      img.src = selectedImages[j];
+      img.className = 'img-fluid rounded shadow-sm w-100';
+      img.style.height = '220px';
+      img.style.objectFit = 'cover';
+      img.alt = '${title} - Imagen ${j + 1}';
+      img.loading = 'lazy';
+      img.style.cursor = 'zoom-in';
+
+      // Zoom al hacer clic
+      img.onclick = () => openZoomImage(selectedImages[j]);
+
+      col.appendChild(img);
+      row.appendChild(col);
     }
-    
-    // Show modal
-    modal.classList.add('show');
-    modal.style.display = 'block';
+
+    modalImageContainer.appendChild(row);
+  }
+
+  const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+  modal.show();
+}
+
+// Función para zoom (opcional)
+function openZoomImage(src) {
+  const zoomHTML = `
+    <div class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-body text-center p-2">
+            <img src="${src}" class="img-fluid rounded" style="max-height: 90vh;">
+          </div>
+        </div>
+      </div>
+    </div>`;
+
+  document.body.insertAdjacentHTML('beforeend', zoomHTML);
+  const modalEl = document.body.lastElementChild;
+  const modal = new bootstrap.Modal(modalEl);
+  modal.show();
+  modalEl.addEventListener('hidden.bs.modal', () => modalEl.remove());
 }
 
 function closeModal() {
-    const modal = document.getElementById('imageModal');
-    modal.classList.remove('show');
-    modal.style.display = 'none';
+  const modal = bootstrap.Modal.getInstance(document.getElementById('imageModal'));
+  if (modal) modal.hide();
 }
 
 //animacion en actividades con javascript
@@ -322,3 +346,4 @@ faqItems.forEach(item => {
         });
     });
 });
+

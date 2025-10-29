@@ -60,7 +60,7 @@
         </nav>
     </header>
 
- <!-- Hero -->
+    <!-- Hero -->
     <section class="hero d-flex flex-column justify-content-center align-items-center text-center">
         <div class="container text-overlay text-center py-0">
             <div class="row justify-content-center">
@@ -184,25 +184,27 @@
 </div>
 
 <!-- Modal for image gallery -->
-<div id="imageModal" class="modal fade" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content bg-dark text-white">
-            <div class="modal-header border-0">
-                <h5 class="modal-title bebas-neue-regular fs-3" id="modalTitle">Entrenamiento físico</h5>
-                <button type="button" class="btn-close btn-close-white" onclick="closeModal()" aria-label="Cerrar"></button>
-            </div>
-            <div class="modal-body p-4">
-                <div class="container-fluid">
-                    <div class="row g-3" id="modalImageContainer">
-                        <!-- Las imágenes se insertan aquí dinámicamente -->
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer border-0 justify-content-center">
-                <button type="button" class="btn btn-outline-light" onclick="closeModal()">Cerrar</button>
-            </div>
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content bg-dark text-white">
+      
+      <!-- HEADER: Título + Botón X -->
+      <div class="modal-header border-bottom border-warning pb-2">
+        <h5 class="modal-title h3 fw-bold text-warning" id="modalTitle">Entrenamiento físico</h5>
+        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- BODY: Imágenes -->
+      <div class="modal-body pt-3">
+        <div class="container-fluid">
+          <div class="row g-3" id="modalImageContainer">
+            <!-- JS inserta las imágenes aquí -->
+          </div>
         </div>
+      </div>
+
     </div>
+  </div>
 </div>
         </section>
 
