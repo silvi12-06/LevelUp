@@ -1,3 +1,4 @@
+//Animación para el modal de las imagenes de actividades
 function openModal(images, title) {
   const modalTitle = document.getElementById('modalTitle');
   const modalImageContainer = document.getElementById('modalImageContainer');
@@ -5,18 +6,15 @@ function openModal(images, title) {
   modalTitle.textContent = title;
   modalImageContainer.innerHTML = '';
 
-  // Tomar solo las primeras 6 imágenes
   const selectedImages = images.slice(0, 6);
 
   // Crear filas de 3 imágenes
   for (let i = 0; i < selectedImages.length; i += 3) {
     const row = document.createElement('div');
-    row.className = 'row g-3 mb-3'; // g-3 = espacio entre columnas
+    row.className = 'row g-3 mb-3'; 
 
     for (let j = i; j < i + 3 && j < selectedImages.length; j++) {
       const col = document.createElement('div');
-      // MÓVIL: 1 imagen por fila → col-12
-      // TABLET Y ARRIBA: 3 por fila → col-md-4
       col.className = 'col-12 col-md-4';
 
       const img = document.createElement('img');
@@ -28,7 +26,6 @@ function openModal(images, title) {
       img.loading = 'lazy';
       img.style.cursor = 'zoom-in';
 
-      // Zoom al hacer clic
       img.onclick = () => openZoomImage(selectedImages[j]);
 
       col.appendChild(img);
@@ -42,7 +39,7 @@ function openModal(images, title) {
   modal.show();
 }
 
-// Función para zoom (opcional)
+//Zoom para las imagenes
 function openZoomImage(src) {
   const zoomHTML = `
     <div class="modal fade" tabindex="-1">
@@ -67,29 +64,25 @@ function closeModal() {
   if (modal) modal.hide();
 }
 
-//animacion en actividades con javascript
-// Esperamos a que cargue el DOM
+//Animacion en actividades con javascript para que aumenten el tamaño
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll('.hover-scale-card');
 
     cards.forEach(card => {
         const scaleItems = card.querySelectorAll('.scale-item');
 
-        // Mouse enter
         card.addEventListener('mouseenter', () => {
             scaleItems.forEach(item => {
                 item.style.transform = 'scale(1.12)';
             });
         });
 
-        // Mouse leave
         card.addEventListener('mouseleave', () => {
             scaleItems.forEach(item => {
                 item.style.transform = 'scale(1)';
             });
         });
 
-        // BONUS: Soporte táctil (móviles)
         card.addEventListener('touchstart', () => {
             scaleItems.forEach(item => {
                 item.style.transform = 'scale(1.08)';
@@ -106,31 +99,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// === ANIMACIÓN LOGO HERO AL CARGAR PÁGINA ===
+//Animación para el hero 
 document.addEventListener("DOMContentLoaded", () => {
     const heroLogo = document.querySelector(".hero-logo-animated");
 
     if (heroLogo) {
-        // Aseguramos que empiece oculto y pequeño
         gsap.set(heroLogo, {
             scale: 0.3,
             opacity: 0,
             y: -50
         });
 
-        // Animación de entrada: crece, sube y rebota
         gsap.to(heroLogo, {
             scale: 1,
             opacity: 1,
             y: 0,
             duration: 1.4,
-            ease: "back.out(1.6)", // Rebote suave
+            ease: "back.out(1.6)",
             delay: 0.3
         });
     }
 });
 
-// Animación con GSAP
+// Animación con GSAP para la cinta debajo del hero
 document.addEventListener("DOMContentLoaded", () => {
     const elementoFrase = document.querySelector(".frase");
     if (elementoFrase) {
@@ -139,10 +130,10 @@ document.addEventListener("DOMContentLoaded", () => {
             { x: "-100vw" },
             {
                 x: "100vw",
-                duration: 8,           // ← MENOS TIEMPO: 8 segundos (antes 15)
-                ease: "none",          // ← Movimiento lineal (más natural para scroll infinito)
+                duration: 8,          
+                ease: "none",         
                 repeat: -1,
-                repeatDelay: 0.2,      // ← MENOS ESPERA: 0.5 segundos (antes 1)
+                repeatDelay: 0.2,      
                 onRepeat: () => {
                     gsap.set(elementoFrase, { x: "-100vw" });
                 }
@@ -154,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// ScrollTrigger: Mapa y texto
+// Animación ScrollTrigger: Mapa y texto
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(".gsap-map", 
@@ -189,7 +180,7 @@ gsap.fromTo(".content-wrapper",
     }
 );
 
-// === ANIMACIÓN ACTIVIDADES CON GSAP + SCROLLTRIGGER ===
+//Animación actividades con GSAP y SCROLLTRIGGER
 gsap.fromTo("[data-gsap='actividad']", 
     {
         y: 100,
@@ -211,7 +202,7 @@ gsap.fromTo("[data-gsap='actividad']",
     }
 );
 
-// === HOVER EFECTO EN ACTIVIDADES ===
+//Efecto HOVER en actividades
 const actividadItems = document.querySelectorAll("[data-gsap='actividad']");
 
 actividadItems.forEach(item => {
@@ -219,7 +210,6 @@ actividadItems.forEach(item => {
     const scaleItems = item.querySelectorAll('.scale-item');
 
     item.addEventListener('mouseenter', () => {
-        // Animar contenedor
         gsap.to(container, {
             y: -20,
             scale: 1.06,
@@ -227,7 +217,6 @@ actividadItems.forEach(item => {
             duration: 0.5,
             ease: "power2.out"
         });
-        // Animar logo y botón
         gsap.to(scaleItems, {
             scale: 1.15,
             duration: 0.5,
@@ -251,7 +240,7 @@ actividadItems.forEach(item => {
     });
 });
 
-// === ANIMACIÓN TARIFAS CON GSAP + SCROLLTRIGGER ===
+//Aanimación tarifas con GSAP y SCROLLTRIGGER 
 gsap.fromTo("[data-gsap='tarifa']", 
     {
         y: 80,
@@ -273,7 +262,7 @@ gsap.fromTo("[data-gsap='tarifa']",
     }
 );
 
-// === HOVER EFECTO EN TARIFAS ===
+//Efecto HOVER en tarifas
 const tarifaItems = document.querySelectorAll("[data-gsap='tarifa']");
 
 tarifaItems.forEach(item => {
@@ -300,7 +289,7 @@ tarifaItems.forEach(item => {
     });
 });
 
-// === ANIMACIÓN FAQ  ===
+//Animación FAQ
 gsap.fromTo("[data-gsap='faq']", 
     {
         y: 80,
@@ -322,7 +311,7 @@ gsap.fromTo("[data-gsap='faq']",
     }
 );
 
-// Hover effect para FAQ
+//Efecto HOVER para FAQ
 const faqItems = document.querySelectorAll("[data-gsap='faq']");
 faqItems.forEach(item => {
     const card = item.querySelector('.flip-card');
@@ -347,4 +336,3 @@ faqItems.forEach(item => {
         });
     });
 });
-
