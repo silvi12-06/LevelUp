@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 duration: 8,           // ← MENOS TIEMPO: 8 segundos (antes 15)
                 ease: "none",          // ← Movimiento lineal (más natural para scroll infinito)
                 repeat: -1,
-                repeatDelay: 0.5,      // ← MENOS ESPERA: 0.5 segundos (antes 1)
+                repeatDelay: 0.2,      // ← MENOS ESPERA: 0.5 segundos (antes 1)
                 onRepeat: () => {
                     gsap.set(elementoFrase, { x: "-100vw" });
                 }
