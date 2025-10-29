@@ -165,6 +165,11 @@ header{
         transform: translateX(0%); /* Se mueve hasta desaparecer por la izquierda (2 veces su ancho) */
     }
 }
+
+/* Pausa al hover */
+.app-banner:hover .marquee-text {
+    animation-play-state: paused;
+}
 /*Acerca de*/
 #home {
   background-color: black;
@@ -625,6 +630,7 @@ article {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 .carousel-image-container{
@@ -648,10 +654,6 @@ article {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    display: block;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
 }
 .img .carousel-indicators {
     display: flex;
@@ -680,6 +682,30 @@ article {
     top: 50%;
     transform: translateY(-50%);
     width: 5%;
+}
+
+/* FLECHAS CENTRADAS */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.carousel-control-prev { left: 15px; }
+.carousel-control-next { right: 15px; }
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
 }
 
 /* Formulario */
