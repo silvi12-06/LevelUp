@@ -718,21 +718,30 @@ textarea {
   resize: none;
 }
 
-button {
+#contact button[type="submit"] {
   background-color: #f5d359;
   color: #000;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 12px 32px;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border-radius: 10px; /* Bordes muy redondeados */
   align-self: center;
-  transition: 0.3s;
-  border-radius: 5px;
+  min-width: 140px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
-button:hover {
-  background-color: white;
+#contact button[type="submit"]:hover {
+  background-color: hsl(0, 0%, 100%);
+  transform: translateY(-2px);
+  
+}
+
+#contact button[type="submit"]:active {
+  transform: translateY(0);
 }
 
 /* Footer */
