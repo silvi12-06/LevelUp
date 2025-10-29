@@ -420,35 +420,45 @@
             <div class="text-blanco text-center mb-4">
                 <p>Explora nuestra galería de imágenes para ver nuestras instalaciones y actividades.</p>
             </div>
-            <div class="container-fluid p-0">   
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/pesas carrousel.jpg" class="d-block w-100 img-fluid" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/pelotas carousel.jpg" class="d-block w-100 img-fluid" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/boxeo carrousel.jpg" class="d-block w-100 img-fluid" alt="">
-                    </div>
-                     <div class="carousel-item">
-                        <img src="./img/cinta de correr.jpg" class="d-block w-100 img-fluid" alt="">
-                    </div>
-                     <div class="carousel-item">
-                        <img src="./img/carrousel sala.jpg" class="d-block w-100 img-fluid" alt="">
+           <section id="img" class="py-5 bg-dark">
+        <!-- CAROUSEL PEQUEÑO Y RESPONSIVO -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
+                <!-- Ratio controla el alto -->
+                <div class="ratio ratio-16x9">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/pesas carrousel.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Pesas">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/pelotas carousel.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Pelotas">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/boxeo carrousel.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Boxeo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/cinta de correr.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Cinta">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carrousel sala.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Sala">
+                            </div>
+                        </div>
+
+                        <!-- FLECHAS -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-            </div>  
+        </div>
+    </div>
         </section>
 
         <!-- Sección de inscripción-->
@@ -558,11 +568,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
         <!-- CREDITOS Y COPYRIGHT -->
-        <div class="text-center mt-4 pt-3 border-top border-dark">
+        <div class="text-center mt-4 pt-3">
             <p class="fw-bold mb-1">Made by: Carla Prat & Silvia Barañán</p>
             <p class="mb-0 small">&copy; 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
         </div>
