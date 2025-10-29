@@ -142,7 +142,7 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*GSAP*/
+/*descargate la app*/
 .frase-container {
     background-color: #f5d359; /* Fondo negro fijo */
     width: 100%;
@@ -240,6 +240,7 @@ header{
     font-weight: 400; 
     text-align: center; 
     color: white; 
+    margin-bottom: 50px;
 } 
 #about .hero-container { 
     background-color: black; 
@@ -485,6 +486,7 @@ header{
     text-align: center;
     font-weight: 400;
     font-size: 20px;
+    margin-bottom: 50px;
 }
 
 .faq-grid {

@@ -1,27 +1,3 @@
-// Animación con GSAP
-document.addEventListener("DOMContentLoaded", () => {
-    const elementoFrase = document.querySelector(".frase");
-    if (elementoFrase) { // Verifica que el elemento exista
-        gsap.fromTo(
-            elementoFrase,
-            { x: "-100vw" },
-            {
-                x: "100vw",
-                duration: 15,
-                ease: "power1.inOut",
-                repeat: -1,
-                repeatDelay: 1,
-                onRepeat: () => {
-                    gsap.set(elementoFrase, { x: "-100vw" });
-                }
-            }
-        );
-    } else {
-        console.error("No se encontró el elemento con clase 'frase'");
-    }
-});
-
-//animacion con gsap
 function openModal(imageUrls, title) {
     const modal = document.getElementById('imageModal');
     const modalImageContainer = document.getElementById('modalImageContainer');
@@ -345,4 +321,4 @@ faqItems.forEach(item => {
             ease: "power2.out"
         });
     });
-});   
+});
