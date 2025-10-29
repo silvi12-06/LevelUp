@@ -78,16 +78,16 @@
                 </div>
             </div>
         </div>
-
     </section>
-            <!-- Cinta animada responsiva debajo del hero -->
-<div class="app-banner bg-warning text-black py-3 overflow-hidden">
-    <div class="d-flex align-items-center justify-content-center">
-        <div class="marquee-text text-uppercase">
-            ¡¡¡DESCARGATE NUESTRA APP!!!
+
+    <!-- Cinta GSAP debajo del hero -->
+    <div class="app-banner bg-warning text-black py-3 overflow-hidden">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="marquee-text text-uppercase">
+                ¡¡¡DESCARGATE NUESTRA APP!!!
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Contenido principal -->
     <main aria-label="Contenido principal de la página">
@@ -122,94 +122,88 @@
         <section id="about" class="py-3"> 
             <h2 class="bebas-neue-regular">ACTIVIDADES</h2> 
             <p>¡Descubre las diversas actividades que ofrecemos para todas las edades y niveles!</p> 
-           <div class="container text-center">
-    <div class="row align-items-center g-4">
-        <div class="col-lg-6 col-md-6 col-sm-12" data-gsap="actividad">
-            <div class="hero-container position-relative hover-scale-card">
-                <div class="logo-container position-absolute top-25 start-50 translate-middle">
-                    <img src="./img/informe.png" class="hero-logo scale-item" alt="" onclick="openModal(['./img/pesas.jpg','./img/entrena 1.jpg','./img/entrenamiento foto.jpg','./img/entrenamiento foto.jpg','./img/entrenamiento foto.jpg','./img/entrenamiento foto.jpg'], 'Entrenamiento físico')">
-                    <div class="hero-buttons w-100 mt-4">
-                        <a onclick="openModal(['./img/pesas.jpg','./img/entrena 1.jpg','./img/entrenamiento fisico 2.jpg','./img/entrenamiento fisico 5.jpg','./img/entrenamiento fisico 6.jpg','./img/entrenamiento fisico1.jpg'], 'Entrenamiento físico')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
-                            Entrenamiento físico
-                        </a>
+            <div class="container text-center">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-gsap="actividad">
+                        <div class="hero-container position-relative hover-scale-card">
+                            <div class="logo-container position-absolute top-25 start-50 translate-middle">
+                                <img src="./img/informe.png" class="hero-logo scale-item" alt="">
+                                <div class="hero-buttons w-100 mt-4">
+                                    <a onclick="openModal(['./img/pesas.jpg','./img/entrena 1.jpg','./img/entrenamiento fisico 2.jpg','./img/entrenamiento fisico 5.jpg','./img/entrenamiento fisico 6.jpg','./img/entrenamiento fisico1.jpg'], 'Entrenamiento físico')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
+                                        Entrenamiento físico
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-gsap="actividad">
+                        <div class="hero-container position-relative hover-scale-card">
+                            <div class="logo-container position-absolute top-25 start-50 translate-middle">
+                                <img src="./img/personas.png" class="hero-logo scale-item" alt="">
+                                <div class="hero-buttons w-100 mt-4">
+                                    <a onclick="openModal(['./img/clases grupales 7.jpg','./img/clases grupales 3.jpg','./img/clases grupales 2.jpg','./img/clases grupales 8.jpg','./img/actividades-dirigidas-bis.jpg','./img/activitats_dirigides.jpg'], 'Clases grupales')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
+                                        Clases grupales
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12" data-gsap="actividad">
+                        <div class="hero-container position-relative hover-scale-card">
+                            <div class="logo-container position-absolute top-25 start-50 translate-middle">
+                                <img src="./img/guantes-de-boxeo.png" class="hero-logo scale-item" alt="">
+                                <div class="hero-buttons w-100 mt-4">
+                                    <a onclick="openModal(['./img/deportes 1.jpg','./img/deportes 2.jpg','./img/deportes 3.jpg','./img/deportes 4.jpg','./img/deportes 5.jpg','./img/deportes 6.jpg'], 'Deportes contacto')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
+                                        Deportes contacto
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12" data-gsap="actividad">
+                        <div class="hero-container position-relative hover-scale-card">
+                            <div class="logo-container position-absolute top-25 start-50 translate-middle">
+                                <img src="./img/yoga.png" class="hero-logo scale-item" alt="">
+                                <div class="hero-buttons w-100 mt-4">
+                                    <a onclick="openModal(['./img/yoga.jpg','./img/bienestar 7.jpg','./img/bienestar 1.jpg','./img/bienestar 5.jpg','./img/bienestar 3.jpg','./img/bienestar 4.jpg'], 'Bienestar')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
+                                        Bienestar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12" data-gsap="actividad">
+                        <div class="hero-container position-relative hover-scale-card">
+                            <div class="logo-container position-absolute top-25 start-50 translate-middle">
+                                <img src="./img/agregar.png" class="hero-logo scale-item" alt="">
+                                <div class="hero-buttons w-100 mt-4">
+                                    <a onclick="openModal(['./img/complementario 1.jpg','./img/complementario 2.jpg','./img/complementario 3.jpg','./img/complementario 4.jpg','./img/complementario 5.jpg','./img/complementario 6.jpg'], 'Complementarios')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
+                                        Complementarios
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12" data-gsap="actividad">
-            <div class="hero-container position-relative hover-scale-card">
-                <div class="logo-container position-absolute top-25 start-50 translate-middle">
-                    <img src="./img/personas.png" class="hero-logo scale-item" alt="" onclick="openModal(['./img/actividades-dirigidas-bis.jpg','./img/grupal1.jpg','./img/grupal2.jpg','./img/grupal3.jpg','./img/grupal4.jpg','./img/grupal5.jpg'], 'Clases grupales')">
-                    <div class="hero-buttons w-100 mt-4">
-                        <a onclick="openModal(['./img/clases grupales 7.jpg','./img/clases grupales 3.jpg','./img/clases grupales 2.jpg','./img/clases grupales 8.jpg','./img/actividades-dirigidas-bis.jpg','./img/activitats_dirigides.jpg'], 'Clases grupales')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
-                            Clases grupales
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12" data-gsap="actividad">
-            <div class="hero-container position-relative hover-scale-card">
-                <div class="logo-container position-absolute top-25 start-50 translate-middle">
-                    <img src="./img/guantes-de-boxeo.png" class="hero-logo scale-item" alt="" onclick="openModal(['./img/mujer-entrenando-defensa-personal.webp','./img/boxeo1.jpg','./img/boxeo2.jpg','./img/boxeo3.jpg','./img/boxeo4.jpg','./img/boxeo5.jpg'], 'Deportes contacto')">
-                    <div class="hero-buttons w-100 mt-4">
-                        <a onclick="openModal(['./img/deportes 1.jpg','./img/deportes 2.jpg','./img/deportes 3.jpg','./img/deportes 4.jpg','./img/deportes 5.jpg','./img/deportes 6.jpg'], 'Deportes contacto')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
-                            Deportes contacto
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12" data-gsap="actividad">
-            <div class="hero-container position-relative hover-scale-card">
-                <div class="logo-container position-absolute top-25 start-50 translate-middle">
-                    <img src="./img/yoga.png" class="hero-logo scale-item" alt="" onclick="openModal(['./img/yoga.jpg','./img/yoga1.jpg','./img/yoga2.jpg','./img/yoga3.jpg','./img/yoga4.jpg','./img/yoga5.jpg'], 'Bienestar')">
-                    <div class="hero-buttons w-100 mt-4">
-                        <a onclick="openModal(['./img/yoga.jpg','./img/bienestar 7.jpg','./img/bienestar 1.jpg','./img/bienestar 5.jpg','./img/bienestar 3.jpg','./img/bienestar 4.jpg'], 'Bienestar')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
-                            Bienestar
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12" data-gsap="actividad">
-            <div class="hero-container position-relative hover-scale-card">
-                <div class="logo-container position-absolute top-25 start-50 translate-middle">
-                    <img src="./img/agregar.png" class="hero-logo scale-item" alt="" onclick="openModal(['./img/complementarios1.jpg','./img/complementarios2.jpg','./img/complementarios3.jpg','./img/complementarios4.jpg','./img/complementarios5.jpg','./img/complementarios6.jpg'], 'Complementarios')">
-                    <div class="hero-buttons w-100 mt-4">
-                        <a onclick="openModal(['./img/complementario 1.jpg','./img/complementario 2.jpg','./img/complementario 3.jpg','./img/complementario 4.jpg','./img/complementario 5.jpg','./img/complementario 6.jpg'], 'Complementarios')" class="btn btn-primary btn-lg hero-btn scale-item me-3">
-                            Complementarios
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Modal for image gallery -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-    <div class="modal-content bg-dark text-white">
-      
-      <!-- HEADER: Título + Botón X -->
-      <div class="modal-header border-bottom border-warning pb-2">
-        <h5 class="modal-title h3 fw-bold text-warning" id="modalTitle">Entrenamiento físico</h5>
-        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <!-- BODY: Imágenes -->
-      <div class="modal-body pt-3">
-        <div class="container-fluid">
-          <div class="row g-3" id="modalImageContainer">
-            <!-- JS inserta las imágenes aquí -->
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
+            <!-- Modal imagenes actividades -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header border-bottom border-warning pb-2">
+                            <h5 class="modal-title h3 fw-bold text-warning" id="modalTitle">Entrenamiento físico</h5>
+                            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pt-3">
+                            <div class="container-fluid">
+                                <div class="row g-3" id="modalImageContainer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Sección Tarifas -->
@@ -219,7 +213,6 @@
                     <h2 class="bebas-neue-regular text-white">TARIFAS</h2>
                     <p class="text-blanco">Consulta nuestras tarifas competitivas y planes de membresía flexibles.</p>
                 </div>
-
                 <div class="row sponsor-grid justify-content-center g-4">
                     <div class="col-lg-3 col-md-6" data-gsap="tarifa">
                         <div class="flip-card">
@@ -237,7 +230,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="col-lg-3 col-md-6" data-gsap="tarifa">
                         <div class="flip-card">
                             <div class="flip-card-inner">
@@ -254,7 +246,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="col-lg-3 col-md-6" data-gsap="tarifa">
                         <div class="flip-card">
                             <div class="flip-card-inner">
@@ -271,7 +262,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="col-lg-3 col-md-6" data-gsap="tarifa">
                         <div class="flip-card">
                             <div class="flip-card-inner">
@@ -420,53 +410,45 @@
             <div class="text-blanco text-center mb-4">
                 <p>Explora nuestra galería de imágenes para ver nuestras instalaciones y actividades.</p>
             </div>
-           <section id="img" class="py-5 bg-dark">
-        <!-- CAROUSEL PEQUEÑO Y RESPONSIVO -->
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
-                <!-- Ratio controla el alto -->
-                <div class="ratio ratio-16x9">
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/pesas carrousel.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Pesas">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-11 col-md-9 col-lg-7 col-xl-6">
+                    <div class="ratio ratio-16x9">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/pesas carrousel.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Pesas">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/pelotas carousel.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Pelotas">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/boxeo carrousel.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Boxeo">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/cinta de correr.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Cinta">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/carrousel sala.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Sala">
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="./img/pelotas carousel.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Pelotas">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/boxeo carrousel.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Boxeo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/cinta de correr.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Cinta">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/carrousel sala.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Sala">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
-
-                        <!-- FLECHAS -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
         </section>
 
         <!-- Sección de inscripción-->
         <section id="contact">
             <h2 class="bebas-neue-regular">INSCRIPCIÓN</h2>
             <p>Inscribete a nuestro gimansio rellenando el siguiente formulario:</p>
-
-            <!-- Formulario accesible -->
             <form action="#" method="post" aria-label="Formulario de inscripción">
                 <div class="fila">
                     <div class="campo">
@@ -478,7 +460,6 @@
                         <input type="text" id="sexo" name="sexo">
                     </div>
                 </div>
-
                 <div class="fila">
                     <div class="campo">
                         <label for="telefono">Teléfono:</label>
@@ -489,17 +470,14 @@
                         <input type="date" id="fecha" name="fecha">
                     </div>
                 </div>
-
                 <div class="campo">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-
                 <div class="campo">
                     <label for="direccion">Dirección:</label>
                     <input type="text" id="direccion" name="direccion">
                 </div>
-
                 <div class="fila">
                     <div class="campo">
                         <label for="dni">DNI:</label>
@@ -510,73 +488,61 @@
                         <input type="text" id="tarifa" name="tarifa">
                     </div>
                 </div>
-
                 <div class="campo">
                     <label for="mensaje">Mensajes adicionales:</label>
                     <textarea id="mensaje" name="mensaje" rows="4"></textarea>
                 </div>
-
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 
-<!-- Pie de página -->
-<footer class="bg-warning text-black py-4" aria-label="Pie de la página">
-    <div class="container">
-        <div class="row g-4">
-
-            <!-- CONTACTO -->
-            <div class="col-12 col-md-4">
-                <div class="text-center text-md-start h-100 d-flex flex-column justify-content-start">
-                    <h3 class="bebas-neue-regular mb-3 text-footer">CONTACTO</h3>
+    <!-- Pie de página -->
+    <footer class="bg-warning text-black py-4" aria-label="Pie de la página">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="text-center text-md-start h-100 d-flex flex-column justify-content-start">
+                        <h3 class="bebas-neue-regular mb-3 text-footer">CONTACTO</h3>
                     
-                    <p class="mb-2 d-flex align-items-center justify-content-center justify-content-md-start gap-2">
-                        <img src="./img/llamar.png" alt="Teléfono" class="footer-icon">
-                        <a href="tel:913536241" class="text-black text-decoration-none">913 536 241</a>
-                    </p>
-
-                    <p class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start gap-2">
-                        <img src="./img/correo.png" alt="Email" class="footer-icon">
-                        <a href="mailto:levelup@gmail.com" class="text-black text-decoration-none">levelup@gmail.com</a>
-                    </p>
-
-                    <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                        <a href="#"><img src="./img/logotipo-de-instagram.png" alt="Instagram" class="footer-icon"></a>
-                        <a href="#"><img src="./img/facebook (1).png" alt="Facebook" class="footer-icon"></a>
+                        <p class="mb-2 d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                            <img src="./img/llamar.png" alt="Teléfono" class="footer-icon">
+                            <a href="tel:913536241" class="text-black text-decoration-none">913 536 241</a>
+                        </p>
+                        <p class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                            <img src="./img/correo.png" alt="Email" class="footer-icon">
+                            <a href="mailto:levelup@gmail.com" class="text-black text-decoration-none">levelup@gmail.com</a>
+                        </p>
+                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                            <a href="#"><img src="./img/logotipo-de-instagram.png" alt="Instagram" class="footer-icon"></a>
+                            <a href="#"><img src="./img/facebook (1).png" alt="Facebook" class="footer-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="text-center h-100 d-flex flex-column justify-content-start">
+                        <h3 class="bebas-neue-regular mb-3 text-footer">HORARIO</h3>
+                        <p class="mb-1 fw-bold">Lunes a Sábado: 6:00 a 23:00</p>
+                        <p class="mb-0 fw-bold">Domingos: 6:00 a 14:00</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="text-center text-md-end h-100 d-flex flex-column justify-content-start">
+                        <h3 class="bebas-neue-regular mb-3 text-footer">TEXTOS LEGALES</h3>
+                        <div class="small">
+                            <a href="#" class="d-block text-black text-decoration-none py-1">Términos y Condiciones</a>
+                            <a href="#" class="d-block text-black text-decoration-none py-1">Política de Privacidad</a>
+                            <a href="#" class="d-block text-black text-decoration-none py-1">Políticas de cookies</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- HORARIO -->
-            <div class="col-12 col-md-4">
-                <div class="text-center h-100 d-flex flex-column justify-content-start">
-                    <h3 class="bebas-neue-regular mb-3 text-footer">HORARIO</h3>
-                    <p class="mb-1 fw-bold">Lunes a Sábado: 6:00 a 23:00</p>
-                    <p class="mb-0 fw-bold">Domingos: 6:00 a 14:00</p>
-                </div>
-            </div>
-
-            <!-- TEXTOS LEGALES -->
-            <div class="col-12 col-md-4">
-                <div class="text-center text-md-end h-100 d-flex flex-column justify-content-start">
-                    <h3 class="bebas-neue-regular mb-3 text-footer">TEXTOS LEGALES</h3>
-                    <div class="small">
-                        <a href="#" class="d-block text-black text-decoration-none py-1">Términos y Condiciones</a>
-                        <a href="#" class="d-block text-black text-decoration-none py-1">Política de Privacidad</a>
-                        <a href="#" class="d-block text-black text-decoration-none py-1">Políticas de cookies</a>
-                    </div>
-                </div>
+            <div class="text-center mt-4 pt-3">
+                <p class="fw-bold mb-1">Made by: Carla Prat & Silvia Barañán</p>
+                <p class="mb-0 small">&copy; 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
             </div>
         </div>
-
-        <!-- CREDITOS Y COPYRIGHT -->
-        <div class="text-center mt-4 pt-3">
-            <p class="fw-bold mb-1">Made by: Carla Prat & Silvia Barañán</p>
-            <p class="mb-0 small">&copy; 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- JS externo -->
     <script src="js/js.js"></script>
